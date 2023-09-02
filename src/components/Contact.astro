@@ -10,9 +10,9 @@ const { workHours, address, tel } = Astro.props;
       {
         workHours.map((item) => (
           <p>
-            <strong>{item.title}</strong>:
-            <span class="label">{item.start} - </span>
-            <span class="label">{item.end}</span>
+            <strong>{item.title}: </strong>
+            <time datetime={item.startTime} class="label">{item.start} - </time>
+            <time datetime={item.endTime} class="label">{item.end}</time>
           </p>
         ))
       }

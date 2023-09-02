@@ -53,12 +53,16 @@
       {
         "title": "Weekdays",
         "start": "7:30 (AM)",
-        "end": "8:00 (PM)"
+        "startTime": "07:30",
+        "end": "8:00 (PM)",
+        "endTime": "20:00"
       },
       {
         "title": "Saturday",
         "start": "7:00 (AM)",
-        "end": "8:00 (PM)"
+        "end": "8:00 (PM)",
+        "startTime": "07:00",
+        "endTime": "20:00"
       }
     ],
     "address": {
