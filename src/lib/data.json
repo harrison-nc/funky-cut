@@ -1,0 +1,81 @@
+{
+  "header": {
+    "avatar": "",
+    "title": "Prince",
+    "description": "Barber & Hair Stylist",
+    "contact": {
+      "phone": {
+        "number": "(+234)9059768340",
+        "url": "#"
+      },
+      "email": {
+        "title": "Benjamin Adele",
+        "mailUrl": "mailto:benjamin_adele@gmail.com",
+        "linkUrl": "benjamin_adele@gmail.com",
+        "icon": "/images/icon-mail.svg"
+      }
+    }
+  },
+  "service": {
+    "title": "Our Services",
+    "description": "At Benswas Hairs, we're dedicated to delivering optimal experiences and aesthetics. Enjoy our home and onsite services, with provisions for corporate and educational bookings. Explore the relevant links below and transform your look with us today.",
+    "items": [
+      {
+        "title": "Home Service",
+        "description": "Get your hair cut or styles right from the comfort of your home or office.",
+        "link": {
+          "title": "Contact Us",
+          "url": "#"
+        }
+      },
+      {
+        "title": "Onsite Service",
+        "description": "Get your hair cut or styles right from the comfort of your home or office.",
+        "link": {
+          "title": "Contact Us",
+          "url": "#"
+        }
+      },
+      {
+        "title": "Private Booking",
+        "description": "Get your hair cut or styles right from the comfort of your home or office.",
+        "link": {
+          "title": "Contact Us",
+          "url": "#"
+        }
+      }
+    ]
+  },
+  "footer": {
+    "logo": "<url>",
+    "logoAlt": "Barbing Saloon",
+    "workHours": [
+      {
+        "title": "Weekdays",
+        "start": "7:30 (AM)",
+        "end": "8:00 (PM)"
+      },
+      {
+        "title": "Saturday",
+        "start": "7:00 (AM)",
+        "end": "8:00 (PM)"
+      }
+    ],
+    "address": {
+      "street": "5A Rumuonwu Street Eneka",
+      "city": "Port Harcourt",
+      "state": "Rivers",
+      "country": "Nigeria"
+    },
+    "production": [
+      {
+        "name": "Designed by Nyeche",
+        "url": "#"
+      },
+      {
+        "name": "Developed by Harrison",
+        "url": "#"
+      }
+    ]
+  }
+}

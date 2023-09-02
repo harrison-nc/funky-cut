@@ -1,0 +1,68 @@
+---
+import ContactTelText from "./ContactTelText.astro";
+const { workHours, address, tel } = Astro.props;
+---
+
+<ul role="list" class="contact">
+  <li>
+    <div class="contact__detail">
+      <strong class="title">Openning Hours</strong>
+      {
+        workHours.map((item) => (
+          <p>
+            <strong>{item.title}</strong>:
+            <span class="label">{item.start} - </span>
+            <span class="label">{item.end}</span>
+          </p>
+        ))
+      }
+    </div>
+  </li>
+
+  <li>
+    <div class="contact__detail">
+      <strong class="title">Address</strong>
+      <p class="inline">
+        <span>{address.street},&nbsp;</span>
+        <span>{address.city},&nbsp;</span>
+        <span>{address.state},&nbsp;</span>
+        <span>{address.country}</span>
+      </p>
+    </div>
+  </li>
+
+  <li>
+    <div class="contact__detail">
+      <strong class="title">Contact</strong>
+      <div class="item">
+        <ContactTelText type="email" text={tel.email} />
+        <ContactTelText type="phone" text={tel.phone} />
+      </div>
+    </div>
+  </li>
+</ul>
+
+<style>
+  .inline {
+    width: 48ch;
+  }
+
+  .contact {
+    display: grid;
+    gap: 32px;
+  }
+
+  .contact__detail > :nth-child(2) {
+    margin-top: 16px;
+  }
+
+  .contact__detail {
+    display: grid;
+    gap: 8px;
+  }
+
+  .contact__detail .item {
+    display: grid;
+    gap: 8px;
+  }
+</style>
