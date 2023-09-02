@@ -132,6 +132,16 @@ import data from "../lib/data.json";
     padding-block: 24px;
   }
 
+  @media (min-width: 800px) {
+    .primary-header {
+      padding-block: 56px;
+    }
+
+    .primary-header hr {
+      max-width: 384px;
+    }
+  }
+
   .profile {
     display: flex;
     flex-flow: column;
@@ -147,6 +157,12 @@ import data from "../lib/data.json";
     display: flex;
     flex-flow: column;
     gap: 1rem;
+  }
+
+  @media (min-width: 800px) {
+    .contacts {
+      flex-flow: row;
+    }
   }
 
   [data-contact] {

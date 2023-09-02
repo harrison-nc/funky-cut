@@ -48,6 +48,12 @@ const { title, description, url, label } = Astro.props;
     transition: background-color var(--animation-duration);
   }
 
+  @media(min-width: 800px) {
+    .card > :last-child {
+      justify-self: start;
+    }
+  }
+
   .card:hover {
     --link-border-color: var(--clr-accent);
     --link-bg-color: var(--clr-accent);

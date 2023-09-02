@@ -52,6 +52,17 @@ const { workHours, address, tel } = Astro.props;
     gap: 32px;
   }
 
+  @media (min-width: 900px) {
+    .contact {
+      grid-auto-flow: column;
+      gap: 22px;
+    }
+
+    .label {
+      letter-spacing: 0;
+    }
+  }
+
   .contact__detail > :nth-child(2) {
     margin-top: 16px;
   }
