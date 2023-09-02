@@ -8,28 +8,30 @@ import data from "../lib/data.json";
 ---
 
 <MainLayout>
-  <header class="primary-header | container">
-    <div class="overlay">
-      <div class="profile">
-        <i class="avatar"></i>
-        <h1 class="title">{data.header.title}</h1>
-        <p>{data.header.description}</p>
-      </div>
-      <hr />
-      <div class="contacts">
-        <div data-contact="phone" class="link">
-          <ContactTelLink
-            type="phone"
-            text={data.header.contact.phone.number}
-            url={data.header.contact.phone.url}
-          />
+  <header class="primary-header">
+    <div class="container">
+      <div class="overlay">
+        <div class="profile">
+          <i class="avatar"></i>
+          <h1 class="title">{data.header.title}</h1>
+          <p>{data.header.description}</p>
         </div>
-        <div data-contact="email" class="link">
-          <ContactTelLink
-            type="email"
-            text={data.header.contact.email.title}
-            url={data.header.contact.email.mailUrl}
-          />
+        <hr />
+        <div class="contacts">
+          <div data-contact="phone" class="link">
+            <ContactTelLink
+              type="phone"
+              text={data.header.contact.phone.number}
+              url={data.header.contact.phone.url}
+            />
+          </div>
+          <div data-contact="email" class="link">
+            <ContactTelLink
+              type="email"
+              text={data.header.contact.email.title}
+              url={data.header.contact.email.mailUrl}
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -142,6 +144,10 @@ import data from "../lib/data.json";
     }
   }
 
+  .primary-header > .container {
+    width: 100%;
+  }
+
   .profile {
     display: flex;
     flex-flow: column;
@@ -188,6 +194,16 @@ import data from "../lib/data.json";
     gap: 1rem;
   }
 
+  @media (min-width: 900px) {
+    .services {
+      display: flex;
+    } 
+
+    footer.container {
+      max-width: 94vw;
+    }
+  }
+
   .overlay {
     display: flex;
     flex-flow: column;
@@ -208,6 +224,12 @@ import data from "../lib/data.json";
     gap: 24px;
   }
 
+  @media (min-width: 800px) {
+    .contribution {
+      justify-content: start;
+    }
+  }
+
   .contribution a {
     letter-spacing: 0;
     text-decoration: underline;
@@ -216,5 +238,11 @@ import data from "../lib/data.json";
   .footer__footer {
     display: grid;
     gap: 24px;
+  }
+
+  @media (min-width: 800px) {
+    .footer__footer {
+      grid-auto-flow: column;
+    }
   }
 </style>

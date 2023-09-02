@@ -54,6 +54,12 @@ const { title, description, url, label } = Astro.props;
     }
   }
 
+  @media(min-width: 900px) {
+    .card > :last-child {
+      justify-self: center;
+    }
+  }
+
   .card:hover {
     --link-border-color: var(--clr-accent);
     --link-bg-color: var(--clr-accent);
