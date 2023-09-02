@@ -15,9 +15,9 @@
 
   --ff-primary: 'Syne', sans-serif;
 
-  --fs-100: 14px;
-  --fs-200: 18px;
-  --fs-300: 24px;
+  --fs-100: 1rem;
+  --fs-200: 1.125rem;
+  --fs-300: 1.5rem;
 
   --fw-100: 400;
   --fw-200: 500;
@@ -25,9 +25,15 @@
 
   font-family: var(--ff-primary);
   font-weight: var(--fw-100);
-  font-size: var(--fs-100);
   color: var(--clr-neutral-300);
+  font-size: 14px;
   line-height: 22px;
+}
+
+@media (min-width: 800px) {
+  :root {
+    font-size: 16px;
+  }
 }
 
 html {
@@ -65,10 +71,6 @@ menu[role="list"] {
 .link {
   font-weight: var(--fw-200);
   font-size: var(--fs-100);
-}
-
-.label {
-  color: var(--clr-neutral-200);
 }
 
 .container {

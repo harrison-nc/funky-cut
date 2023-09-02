@@ -43,10 +43,6 @@ const { workHours, address, tel } = Astro.props;
 </ul>
 
 <style>
-  .inline > span {
-    width: 48ch;
-  }
-
   .contact {
     display: grid;
     gap: 32px;
@@ -75,5 +71,19 @@ const { workHours, address, tel } = Astro.props;
   .contact__detail .item {
     display: grid;
     gap: 8px;
+  }
+
+  .inline > span {
+    width: 48ch;
+  }
+
+  .label {
+    color: var(--clr-neutral-200);
+  }
+
+  @media (min-width: 800px) {
+    .label {
+      font-size: 0.875rem;
+    }
   }
 </style>
