@@ -52,9 +52,9 @@
     "workHours": [
       {
         "title": "Weekdays",
-        "start": "7:30 (AM)",
+        "start": "7:30 AM",
         "startTime": "07:30",
-        "end": "8:00 (PM)",
+        "end": "8:00 PM",
         "endTime": "20:00"
       },
       {
