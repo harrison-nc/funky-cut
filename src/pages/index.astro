@@ -128,15 +128,33 @@ import data from "../lib/data.json";
 
   .primary-header {
     background: #343a40;
+    background-image: url('/images/bg.jpg');
+    background-clip: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     min-height: 50vh;
     color: var(--clr-neutral-100);
     display: grid;
     padding-block: 24px;
+    position: relative;
+    isolation: isolate;
+  }
+
+  .primary-header::before {
+    content: "";
+    position: absolute;
+    background-color: hsl(210, 10%, 23%, 0.4);
+    display: block;
+    inset: 0;
+    z-index: -1;
   }
 
   @media (min-width: 800px) {
     .primary-header {
       padding-block: 56px;
+      background-position: center;
+      background-size: 100%;
     }
 
     .primary-header hr {
